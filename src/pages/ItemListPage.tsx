@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 interface Item {
   id: number;
   name: string;
-  description?: string;
+  description?: string; // optional
   quantity: number;
 }
 

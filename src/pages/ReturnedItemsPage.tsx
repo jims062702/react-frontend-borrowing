@@ -8,7 +8,9 @@ interface ReturnedItem {
   borrowed_date: string;
   quantity: number;
   return_date: string | null;
+  status: "pending" | "returned"; // ✅ add this
 }
+
 
 const ReturnedItemsPage: React.FC = () => {
   const [returnedItems, setReturnedItems] = useState<ReturnedItem[]>([]);
