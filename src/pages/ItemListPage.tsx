@@ -26,7 +26,7 @@ const ItemListPage: React.FC = () => {
   // Fetch items
   const fetchItems = async () => {
     try {
-      const res = await axios.get("https://laravel-backend-borrowing-production-cc2c.up.railway.app/api/items", {
+      const res = await axios.get("https://laravel-backend-borrowing-production-1df4.up.railway.app/api/items", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setItems(res.data);
@@ -63,11 +63,11 @@ const ItemListPage: React.FC = () => {
 
     try {
       if (isEdit) {
-        await axios.put(`https://laravel-backend-borrowing-production-cc2c.up.railway.app/api/items/${form.id}`, form, {
+        await axios.put(`https://laravel-backend-borrowing-production-1df4.up.railway.app/api/items/${form.id}`, form, {
           headers: { Authorization: `Bearer ${token}` },
         });
       } else {
-        await axios.post("https://laravel-backend-borrowing-production-cc2c.up.railway.app/api/items", form, {
+        await axios.post("https://laravel-backend-borrowing-production-1df4.up.railway.app/api/items", form, {
           headers: { Authorization: `Bearer ${token}` },
         });
       }

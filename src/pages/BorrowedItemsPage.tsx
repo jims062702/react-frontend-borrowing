@@ -62,7 +62,7 @@ const BorrowedItemPage: React.FC = () => {
   // Fetch available items
   const fetchItems = async () => {
     try {
-      const res = await axios.get("https://laravel-backend-borrowing-production-cc2c.up.railway.app/api/items", {
+      const res = await axios.get("https://laravel-backend-borrowing-production-1df4.up.railway.app/api/items", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setItems(res.data);
