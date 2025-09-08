@@ -238,7 +238,7 @@ const ItemListPage: React.FC = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center p-2">
+        <div className="fixed inset-0 backdrop-blur-sm   bg-opacity-40 flex items-center justify-center p-2">
           <div className="bg-white p-4 sm:p-6 rounded-lg w-[90%] sm:w-96 shadow-lg">
             <h3 className="text-xl font-bold mb-4 text-center">
               {isEdit ? "Edit Item" : "Add Item"}
